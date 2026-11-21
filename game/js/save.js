@@ -1,0 +1,1 @@
+export function saveGame(g){try{localStorage.setItem('solmara-save',JSON.stringify({cash:g.cash,index:g.mission.index,x:g.player.x,y:g.player.y,smg:g.player.smg,packages:g.collected}))}catch{}}export function loadGame(){try{return JSON.parse(localStorage.getItem('solmara-save'))}catch{return null}}
